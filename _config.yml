@@ -1,0 +1,53 @@
+title: "Vijay Prabhas Kodamalla"
+subtitle: "Graduate Researcher in HPC & GPU Performance Engineering"
+
+# Minimal Mistakes theme configuration
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"  # can switch later to dark, neon, air, etc.
+
+url: "https://vkodamalla3.github.io"   # update after repo setup
+baseurl: ""
+
+# Site author details
+author:
+  name: "Vijay Prabhas Kodamalla"
+  avatar: "/assets/images/profile.jpg"   # optional
+  bio: "Graduate Research Assistant @ Georgia Tech | GPU Acceleration & HPC Performance Optimization"
+  location: "Atlanta, GA"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:vkodamalla3@gatech.edu"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/vijaykodamalla"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/vkodamalla3"
+    - label: "Resume"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/assets/docs/resume.pdf"
+
+# Navigation
+nav:
+  - title: "Home"
+    url: "/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Skills"
+    url: "/skills/"
+  - title: "Education"
+    url: "/education/"
+  - title: "Publications"
+    url: "/publications/"
+  - title: "Contact"
+    url: "/contact/"
+
+# Defaults for pages
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+      author_profile: true
