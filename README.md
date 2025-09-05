@@ -1,6 +1,6 @@
 # Portfolio of Vijay Prabhas Kodamalla
 
-This repository contains the source code for my personal portfolio website, built using **Jekyll** with the [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) theme and deployed via **GitHub Pages**.
+This repository contains the src code for my personal portfolio website, built using **Jekyll** with the [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) theme and deployed via **GitHub Pages**.
 
 🔗 **Live Site:** [https://VijayPrabhas9.github.io](https://VijayPrabhas9.github.io)
 
