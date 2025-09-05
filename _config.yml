@@ -27,19 +27,19 @@ author:
       url: "/assets/docs/Resume_draft.pdf"
 include:
   - _pages
+
 nav:
-  - title: "Home"
-    url: "/"
   - title: "Projects"
-    url: "/projects.html"
+    url: "/projects/"
   - title: "Skills"
-    url: "/skills.html"
+    url: "/skills/"
   - title: "Education"
-    url: "/education.html"
+    url: "/education/"
   - title: "Publications"
-    url: "/publications.html"
+    url: "/publications/"
   - title: "Contact"
-    url: "/contact.html"
+    url: "/contact/"
+
 
 defaults:
   - scope:
