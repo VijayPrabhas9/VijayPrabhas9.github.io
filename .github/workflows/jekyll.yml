@@ -1,9 +1,14 @@
-name: Jekyll site CI
+name: Build and Deploy Jekyll
 
 on:
   push:
     branches:
       - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -14,12 +19,18 @@ jobs:
         with:
           ruby-version: 3.1
           bundler-cache: true
-      - run: |
-          gem install bundler jekyll
-          bundle install
-          bundle exec jekyll build -d _site
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - run: bundle install
+      - run: bundle exec jekyll build --trace
+      - uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          path: ./_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
