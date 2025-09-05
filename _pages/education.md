@@ -2,6 +2,7 @@
 title: "Education"
 layout: single
 author_profile: true
+permalink: /education/
 ---
 
 
