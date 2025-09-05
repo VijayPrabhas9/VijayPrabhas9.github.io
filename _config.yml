@@ -24,7 +24,7 @@ author:
       url: "https://github.com/vkodamalla3"
     - label: "Resume"
       icon: "fas fa-fw fa-file-pdf"
-      url: "/assets/docs/resume.pdf"
+      url: "/assets/docs/Resume_draft.pdf"
 
 nav:
   - title: "Home"
