@@ -25,7 +25,8 @@ author:
     - label: "Resume"
       icon: "fas fa-fw fa-file-pdf"
       url: "/assets/docs/Resume_draft.pdf"
-
+include:
+  - _pages
 nav:
   - title: "Home"
     url: "/"
