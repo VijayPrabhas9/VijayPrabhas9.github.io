@@ -2,6 +2,7 @@
 title: "Skills"
 layout: single
 author_profile: true
+permalink: /skills/
 ---
 
 
