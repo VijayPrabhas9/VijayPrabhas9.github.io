@@ -28,7 +28,7 @@ author:
 include:
   - _pages
 
-nav:
+navigation:
   - title: "Projects"
     url: "/projects/"
   - title: "Skills"
