@@ -30,15 +30,15 @@ nav:
   - title: "Home"
     url: "/"
   - title: "Projects"
-    url: "/projects/"
+    url: "/projects.html"
   - title: "Skills"
-    url: "/skills/"
+    url: "/skills.html"
   - title: "Education"
-    url: "/education/"
+    url: "/education.html"
   - title: "Publications"
-    url: "/publications/"
+    url: "/publications.html"
   - title: "Contact"
-    url: "/contact/"
+    url: "/contact.html"
 
 defaults:
   - scope:
