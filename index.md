@@ -3,164 +3,174 @@ title: "Vijay Prabhas Kodamalla"
 layout: single
 author_profile: true
 header:
-  overlay_image: /assets/images/tech-background.jpg
-  overlay_filter: 0.15
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/tech-banner.jpg
   actions:
+    - label: "View My Projects"
+      url: "/projects/"
     - label: "Download Resume"
-      url: "/assets/docs/resume.pdf"
+      url: "/assets/docs/Resume_draft.pdf"
+excerpt: "Graduate Researcher specializing in HPC & GPU Performance Engineering"
 classes: wide
 ---
 
 <style>
-  .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-  }
-  
-  .portfolio-card {
-    background: #fff;
+  .feature-box {
+    background: #f8f8f8;
     border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    padding: 1.5rem;
     transition: transform 0.3s ease;
   }
   
-  .portfolio-card:hover {
+  .feature-box:hover {
     transform: translateY(-5px);
   }
   
-  .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 1rem 0;
+  .nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+  }
+  
+  .nav-card {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .nav-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+  }
+  
+  .nav-card i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #0077cc;
+  }
+  
+  .about-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: #f8f8f8;
+    border-radius: 8px;
   }
   
   .skill-pill {
-    background: #f2f2f2;
-    padding: 0.5rem 1rem;
+    display: inline-block;
+    background: #e9ecef;
+    padding: 5px 12px;
     border-radius: 20px;
+    margin: 5px;
     font-size: 0.85rem;
   }
   
-  .hero-section {
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 30px 0;
     text-align: center;
-    padding: 2rem 0;
   }
   
-  .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin: 1rem 0;
+  .stat-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0077cc;
+    display: block;
   }
 </style>
 
-<section class="hero-section">
-  <h1>Vijay Prabhas Kodamalla</h1>
-  <p class="lead">Graduate Researcher specializing in HPC & GPU Performance Engineering</p>
-  
-  <div class="social-links">
-    <a href="/assets/docs/resume.pdf" class="btn btn--primary">Resume</a>
-    <a href="https://linkedin.com/in/vijaykodamalla" class="btn btn--info">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-    <a href="https://github.com/vkodamalla3" class="btn btn--dark">
-      <i class="fab fa-github"></i> GitHub
-    </a>
-  </div>
-</section>
-
-<section>
+<section class="about-section">
   <h2>About Me</h2>
-  <p>I accelerate large-scale solvers and deep learning models on modern NVIDIA GPUs through CUDA kernel tuning, communication optimizations, and multi-node scaling. Currently pursuing my Master's at Georgia Tech with a focus on computational science and engineering.</p>
-</section>
-
-<section>
-  <h2>Featured Projects</h2>
-  <div class="portfolio-grid">
-    <div class="portfolio-card">
-      <h3>SC25 Poster – GPU Acceleration of LESLIE</h3>
-      <p>Achieved <strong>38× speedup</strong> on NVIDIA A100 vs 60-core Xeon CPU through multi-layer optimizations.</p>
-      <p><span class="skill-pill">CUDA</span> <span class="skill-pill">HPC</span> <span class="skill-pill">Optimization</span></p>
+  <p>I'm a Graduate Research Assistant at Georgia Tech specializing in High Performance Computing and GPU acceleration. My work focuses on optimizing large-scale computational solvers and deep learning models through CUDA kernel tuning, communication optimizations, and multi-node scaling on modern NVIDIA GPUs.</p>
+  
+  <p>With expertise spanning from low-level CUDA programming to distributed computing with MPI and NCCL, I bridge the gap between theoretical algorithms and practical high-performance implementations.</p>
+  
+  <div class="stats-grid">
+    <div class="stat-item">
+      <span class="stat-number">38×</span>
+      <span>Speedup Achieved</span>
     </div>
-    
-    <div class="portfolio-card">
-      <h3>Multi-GPU Communication Benchmarks</h3>
-      <p>Benchmarked MPI → CUDA-aware MPI → NCCL → UCX, reducing latency from 45ms to 1.267ms (18× faster).</p>
-      <p><span class="skill-pill">MPI</span> <span class="skill-pill">NCCL</span> <span class="skill-pill">UCX</span></p>
+    <div class="stat-item">
+      <span class="stat-number">57%</span>
+      <span>FP64 Utilization</span>
     </div>
-    
-    <div class="portfolio-card">
-      <h3>3D CNN + Non-Local Self-Attention</h3>
-      <p>Extended CNN with attention achieving 0.8357 accuracy on UCF-101, with profiling on H100 GPUs.</p>
-      <p><span class="skill-pill">PyTorch</span> <span class="skill-pill">CUDA</span> <span class="skill-pill">Deep Learning</span></p>
+    <div class="stat-item">
+      <span class="stat-number">18×</span>
+      <span>Faster Communication</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">93%</span>
+      <span>Reduced Warp Stalls</span>
     </div>
   </div>
 </section>
 
+<div class="nav-grid">
+  <div class="nav-card">
+    <i class="fas fa-project-diagram"></i>
+    <h3>Projects</h3>
+    <p>Explore my research projects in GPU acceleration and HPC optimization</p>
+    <a href="/projects/" class="btn btn--primary">View Projects</a>
+  </div>
+  
+  <div class="nav-card">
+    <i class="fas fa-tools"></i>
+    <h3>Skills</h3>
+    <p>Detailed overview of my technical skills and proficiencies</p>
+    <a href="/skills/" class="btn btn--primary">View Skills</a>
+  </div>
+  
+  <div class="nav-card">
+    <i class="fas fa-graduation-cap"></i>
+    <h3>Education</h3>
+    <p>My academic background and qualifications</p>
+    <a href="/education/" class="btn btn--primary">View Education</a>
+  </div>
+  
+  <div class="nav-card">
+    <i class="fas fa-book"></i>
+    <h3>Publications</h3>
+    <p>My research publications and conference presentations</p>
+    <a href="/publications/" class="btn btn--primary">View Publications</a>
+  </div>
+</div>
+
 <section>
-  <h2>Technical Skills</h2>
-  <div class="skills-container">
-    <span class="skill-pill">C/C++</span>
-    <span class="skill-pill">Fortran (F90)</span>
-    <span class="skill-pill">CUDA C++</span>
-    <span class="skill-pill">CUDA Fortran</span>
-    <span class="skill-pill">Python</span>
-    <span class="skill-pill">MPI</span>
-    <span class="skill-pill">CUDA-aware MPI</span>
-    <span class="skill-pill">NCCL</span>
-    <span class="skill-pill">UCX</span>
-    <span class="skill-pill">OpenACC</span>
-    <span class="skill-pill">PyTorch</span>
-    <span class="skill-pill">TensorFlow</span>
-    <span class="skill-pill">Nsight Systems</span>
-    <span class="skill-pill">Nsight Compute</span>
-    <span class="skill-pill">TensorBoard</span>
-    <span class="skill-pill">Linux</span>
-    <span class="skill-pill">Git</span>
-    <span class="skill-pill">Slurm</span>
+  <h2>Featured Work</h2>
+  
+  <div class="feature-box">
+    <h3>SC25 Poster – GPU Acceleration & Optimizations of LESLIE</h3>
+    <p>Achieved <strong>38× speedup</strong> on NVIDIA A100 vs 60-core Xeon CPU through multi-layer optimizations at kernel, instruction, and communication levels.</p>
+    <p><strong>Key Result:</strong> ConsToPrim kernel reached <strong>57% FP64 utilization</strong> on A100 GPU.</p>
+    <a href="/projects/" class="btn btn--info">Read More</a>
+  </div>
+  
+  <div class="feature-box">
+    <h3>Multi-GPU Communication Benchmarks</h3>
+    <p>Benchmarked MPI → CUDA-aware MPI → NCCL → UCX, reducing communication latency from <strong>45 ms to 1.267 ms</strong> (18× faster).</p>
+    <p>Profiled intra-node vs inter-node transport trade-offs on modern HPC systems.</p>
+    <a href="/projects/" class="btn btn--info">Read More</a>
   </div>
 </section>
 
-<section>
-  <h2>Education</h2>
-  <div class="portfolio-card">
-    <h3>Georgia Institute of Technology</h3>
-    <p><strong>M.S. Computational Science & Engineering</strong> | 2024–2026</p>
-  </div>
-  <div class="portfolio-card">
-    <h3>IIT Dharwad</h3>
-    <p><strong>B.Tech. Mechanical, Materials & Aerospace Engineering</strong> | 2020–2024</p>
-  </div>
+<section style="text-align: center; margin: 50px 0;">
+  <h2>Let's Connect</h2>
+  <p>I'm always interested in discussing new research opportunities and collaborations.</p>
+  <a href="/contact/" class="btn btn--success">Get In Touch</a>
 </section>
-
-<section>
-  <h2>Publications & Conferences</h2>
-  <div class="portfolio-card">
-    <h3>Supercomputing 2025 (SC25, St. Louis)</h3>
-    <p>Poster submission: <em>GPU Acceleration & Optimizations of LESLIE</em></p>
-  </div>
-  <div class="portfolio-card">
-    <h3>Journal of Parallel Computing</h3>
-    <p>Planned submission based on current research</p>
-  </div>
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <div class="notice">
-    <p><i class="fas fa-map-marker-alt"></i> Atlanta, GA</p>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:vkodamalla3@gatech.edu">vkodamalla3@gatech.edu</a></p>
-    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/vijaykodamalla">linkedin.com/in/vijaykodamalla</a></p>
-    <p><i class="fab fa-github"></i> <a href="https://github.com/vkodamalla3">github.com/vkodamalla3</a></p>
-  </div>
-</section>
-
-<hr>
-
-<p style="text-align: center; font-size: 0.8em; color: gray;">
-Last updated: {{ site.time | date: "%B %d, %Y" }}
-</p>
