@@ -1,176 +1,99 @@
 ---
-title: "Vijay Prabhas Kodamalla"
+title: "Vijay Prabhas Kodamalla - HPC & GPU Performance Engineer"
 layout: single
 author_profile: true
 header:
   overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/images/tech-banner.jpg
-  actions:
-    - label: "View My Projects"
-      url: "/projects/"
-    - label: "Download Resume"
-      url: "/assets/docs/Resume_draft.pdf"
-excerpt: "Graduate Researcher specializing in HPC & GPU Performance Engineering"
+  overlay_filter: "0.4"
+  overlay_image: /assets/images/compute-banner.jpg
+excerpt: "Specializing in CUDA optimization, multi-GPU scaling, and high-performance computing"
 classes: wide
 ---
 
 <style>
-  .feature-box {
-    background: #f8f8f8;
-    border-radius: 8px;
-    padding: 25px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .feature-box:hover {
-    transform: translateY(-5px);
-  }
-  
-  .nav-grid {
+.performance-metrics {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin: 40px 0;
-  }
-  
-  .nav-card {
-    background: white;
-    border-radius: 8px;
-    padding: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+.metric-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    padding: 1.5rem;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-  }
-  
-  .nav-card:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    transform: translateY(-5px);
-  }
-  
-  .nav-card i {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    color: #0077cc;
-  }
-  
-  .about-section {
-    margin: 40px 0;
-    padding: 30px;
-    background: #f8f8f8;
-    border-radius: 8px;
-  }
-  
-  .skill-pill {
-    display: inline-block;
-    background: #e9ecef;
-    padding: 5px 12px;
-    border-radius: 20px;
-    margin: 5px;
-    font-size: 0.85rem;
-  }
-  
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    margin: 30px 0;
-    text-align: center;
-  }
-  
-  .stat-item {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-  
-  .stat-number {
+}
+.metric-value {
     font-size: 2rem;
     font-weight: bold;
     color: #0077cc;
     display: block;
-  }
+    margin-bottom: 0.5rem;
+}
+.tech-tag {
+    display: inline-block;
+    background: #f5f5f5;
+    padding: 0.3rem 0.8rem;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    margin: 0.3rem;
+    font-family: 'SF Mono', Monaco, monospace;
+}
+.project-highlight {
+    border-left: 3px solid #0077cc;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    background: #fafafa;
+}
 </style>
 
-<section class="about-section">
-  <h2>About Me</h2>
-  <p>I'm a Graduate Research Assistant at Georgia Tech specializing in High Performance Computing and GPU acceleration. My work focuses on optimizing large-scale computational solvers and deep learning models through CUDA kernel tuning, communication optimizations, and multi-node scaling on modern NVIDIA GPUs.</p>
-  
-  <p>With expertise spanning from low-level CUDA programming to distributed computing with MPI and NCCL, I bridge the gap between theoretical algorithms and practical high-performance implementations.</p>
-  
-  <div class="stats-grid">
-    <div class="stat-item">
-      <span class="stat-number">38×</span>
-      <span>Speedup Achieved</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number">57%</span>
-      <span>FP64 Utilization</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number">18×</span>
-      <span>Faster Communication</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-number">93%</span>
-      <span>Reduced Warp Stalls</span>
-    </div>
-  </div>
-</section>
+## Performance Engineering Focus
 
-<div class="nav-grid">
-  <div class="nav-card">
-    <i class="fas fa-project-diagram"></i>
-    <h3>Projects</h3>
-    <p>Explore my research projects in GPU acceleration and HPC optimization</p>
-    <a href="/projects/" class="btn btn--primary">View Projects</a>
-  </div>
-  
-  <div class="nav-card">
-    <i class="fas fa-tools"></i>
-    <h3>Skills</h3>
-    <p>Detailed overview of my technical skills and proficiencies</p>
-    <a href="/skills/" class="btn btn--primary">View Skills</a>
-  </div>
-  
-  <div class="nav-card">
-    <i class="fas fa-graduation-cap"></i>
-    <h3>Education</h3>
-    <p>My academic background and qualifications</p>
-    <a href="/education/" class="btn btn--primary">View Education</a>
-  </div>
-  
-  <div class="nav-card">
-    <i class="fas fa-book"></i>
-    <h3>Publications</h3>
-    <p>My research publications and conference presentations</p>
-    <a href="/publications/" class="btn btn--primary">View Publications</a>
-  </div>
+I optimize computational workloads on NVIDIA GPUs through systematic analysis and targeted optimizations across kernel, instruction, and communication layers.
+
+<div class="performance-metrics">
+    <div class="metric-card">
+        <span class="metric-value">38×</span>
+        <span>Speedup achieved</span>
+    </div>
+    <div class="metric-card">
+        <span class="metric-value">57%</span>
+        <span>FP64 utilization</span>
+    </div>
+    <div class="metric-card">
+        <span class="metric-value">18×</span>
+        <span>Faster comms</span>
+    </div>
+    <div class="metric-card">
+        <span class="metric-value">93%</span>
+        <span>Stall reduction</span>
+    </div>
 </div>
 
-<section>
-  <h2>Featured Work</h2>
-  
-  <div class="feature-box">
-    <h3>SC25 Poster – GPU Acceleration & Optimizations of LESLIE</h3>
-    <p>Achieved <strong>38× speedup</strong> on NVIDIA A100 vs 60-core Xeon CPU through multi-layer optimizations at kernel, instruction, and communication levels.</p>
-    <p><strong>Key Result:</strong> ConsToPrim kernel reached <strong>57% FP64 utilization</strong> on A100 GPU.</p>
-    <a href="/projects/" class="btn btn--info">Read More</a>
-  </div>
-  
-  <div class="feature-box">
-    <h3>Multi-GPU Communication Benchmarks</h3>
-    <p>Benchmarked MPI → CUDA-aware MPI → NCCL → UCX, reducing communication latency from <strong>45 ms to 1.267 ms</strong> (18× faster).</p>
-    <p>Profiled intra-node vs inter-node transport trade-offs on modern HPC systems.</p>
-    <a href="/projects/" class="btn btn--info">Read More</a>
-  </div>
-</section>
+## Technical Expertise
 
-<section style="text-align: center; margin: 50px 0;">
-  <h2>Let's Connect</h2>
-  <p>I'm always interested in discussing new research opportunities and collaborations.</p>
-  <a href="/contact/" class="btn btn--success">Get In Touch</a>
-</section>
+<div class="tech-tag">CUDA C++</div>
+<div class="tech-tag">CUDA Fortran</div>
+<div class="tech-tag">MPI</div>
+<div class="tech-tag">NCCL</div>
+<div class="tech-tag">UCX</div>
+<div class="tech-tag">OpenACC</div>
+<div class="tech-tag">Nsight Systems</div>
+<div class="tech-tag">Nsight Compute</div>
+
+## Recent Project Highlight
+
+<div class="project-highlight">
+### LESLIE Solver Optimization (SC25 Poster)
+**Challenge:** Accelerate legacy Fortran/MPI CFD code on NVIDIA A100 GPUs
+
+**Approach:** 
+- Kernel-level: Loop fusion, register optimization
+- Instruction-level: DFMA instructions, branchless MERGE operations  
+- Communication-level: CUDA-aware MPI with NCCL/UCX backend
+
+**Results:** 38× speedup vs 60-core Xeon, 57% FP64 utilization on ConsToPrim kernel
+</div>
+
+[View detailed projects](/projects/) | [Download resume](/assets/docs/resume.pdf)
